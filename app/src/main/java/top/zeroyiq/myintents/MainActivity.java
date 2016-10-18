@@ -2,6 +2,7 @@ package top.zeroyiq.myintents;
 
 import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
                  * 第二种 使用 Action 启动 Activity（隐式 Intent）
                  */
                 Intent i = new Intent("top.zeroyiq.myintents.intent.action.Aty1");
+                startActivity(i);
+            }
+        });
+
+        findViewById(R.id.btn_openNavtoBilibili).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.bilibili.com"));
                 startActivity(i);
             }
         });

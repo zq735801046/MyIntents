@@ -14,8 +14,21 @@
 
     <Button
         android:text="Start Aty1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_startAty1"
          />
+
+    <Button
+        android:text="拨打1008611"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_call1008611" />
+
+    <Button
+        android:text="打开Bilibili"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_openNavtoBilibili" />
+
 </LinearLayout>

@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_call1008611).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("tel:1008611"));
+                startActivity(i);
+            }
+        });
+
         findViewById(R.id.btn_openNavtoBilibili).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
